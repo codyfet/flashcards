@@ -10,7 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.config.js --progress --profile --colors",
     "start": "cross-env NODE_ENV=development node server",
     "start:prod": "cross-env NODE_ENV=production node server",
-	"deploy": "node ./node_modules/webpack/bin/webpack.js && node ./deploy.js"
+	"deploy": "node ./node_modules/webpack/bin/webpack.js --config internals/webpack/webpack.prod.config.js && node ./deploy.js"
   },
   "author": "Alexander Volkov <codyfet@mail.ru>",
   "license": "ISC",
